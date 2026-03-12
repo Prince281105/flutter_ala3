@@ -19,4 +19,22 @@ class User {
       image: json['picture']['medium'],
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      "name": name,
+      "email": email,
+      "country": country,
+      "image": image,
+    };
+  }
+
+  factory User.fromMap(Map<String, dynamic> map) {
+    return User(
+      name: map['name'],
+      email: map['email'],
+      country: map['country'],
+      image: map['image'],
+    );
+  }
 }

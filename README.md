@@ -1,100 +1,170 @@
-# 📱 Random Users Directory App
+# ✈️ Travel Memory App (Flutter ALA-3)
 
-A Flutter application that demonstrates **REST API integration** by fetching and displaying user information from a public API. The app retrieves random user data and displays it in a clean **ListView UI with user details**.
+## 📌 Project Overview
+The **Travel Memory App** is a Flutter application developed as part of the **ALA-3 assignment**. The app demonstrates the use of **local data storage in Flutter using SharedPreferences**.
 
-This project was developed as part of a **Flutter API Integration Assignment**.
+Users can store their travel experiences such as places visited, descriptions, and travel dates. The data is saved locally on the device and can be retrieved, updated, and deleted without requiring internet connectivity.
 
 ---
 
-## 🚀 Features
+## 🎯 Objectives
 
-- Fetch data from a **public REST API**
-- Parse JSON response into Dart objects
-- Display user information using **ListView**
-- Modern **Material UI design**
-- Responsive layout for **Flutter Web**
-- Profile avatars with initials
-- Error handling for API requests
+- Develop a Flutter application with **local data storage**
+- Implement **SharedPreferences** for storing user data
+- Demonstrate **CRUD operations**
+    - Create (Add memory)
+    - Read (View memories)
+    - Update (Edit memory)
+    - Delete (Remove memory)
+- Build a simple and user-friendly Flutter UI
+- Upload the project to **GitHub with documentation**
 
 ---
 
 ## 🛠 Technologies Used
 
-- **Flutter**
-- **Dart**
-- **REST API**
-- **HTTP Package**
-- **FutureBuilder**
-- **Material UI**
+| Technology | Purpose |
+|------------|---------|
+| Flutter | Mobile application development |
+| Dart | Programming language |
+| SharedPreferences | Local storage for saving data |
+| Material UI | User interface design |
+| GitHub | Version control and project hosting |
 
 ---
 
-## 🌐 API Used
+## 📱 Application Features
 
-Random User API
-https://randomuser.me/api/?results=20
+### 1️⃣ Add Travel Memory
+Users can store travel details including:
+- Place name
+- Description
+- Travel date
+
+Example:
 
 
-This API returns random user data including:
+Place: Goa
+Description: Beach vacation
+Date: 12 March 2026
 
-- Name
-- Email
-- Country
-- Profile picture
 
-Example JSON response:
+---
 
-```json
-{
- "results": [
-   {
-     "name": { "first": "John", "last": "Doe" },
-     "email": "john@example.com",
-     "location": { "country": "United States" },
-     "picture": { "medium": "image_url" }
-   }
- ]
-}
+### 2️⃣ View Travel Memories
+All saved memories are displayed in a **ListView card layout**.
 
-⚙️ How to Run the Project
+Example UI:
 
-Clone the repository
 
-git clone https://github.com/yourusername/random-users-directory.git
+📍 Goa
+Beach vacation
+12 March 2026
+⭐ Favorite
 
-Navigate to project folder
 
-cd random-users-directory
+---
 
-Install dependencies
+### 3️⃣ Edit Memory
+Users can update previously saved memories.
+
+---
+
+### 4️⃣ Delete Memory
+Users can remove unwanted memories from the list.
+
+---
+
+### 5️⃣ Favorite Memory ⭐
+Important memories can be marked as favorites.
+
+---
+
+## 🏗 System Architecture
+
+
+User Input
+↓
+Flutter UI
+↓
+SharedPreferences
+(Local Storage)
+↓
+Retrieve Data
+↓
+Display using ListView
+
+
+---
+
+## 📂 Project Structure
+
+
+lib
+│
+├── main.dart
+│
+├── models
+│ └── travel_memory.dart
+│
+└── services
+└── storage_service.dart
+
+
+---
+
+## ⚙️ How to Run the Project
+
+1️⃣ Clone the repository
+
+
+git clone https://github.com/Prince281105/flutter_ala3.git
+
+
+2️⃣ Navigate to the project folder
+
+
+cd flutter_ala3
+
+
+3️⃣ Install dependencies
+
 
 flutter pub get
 
-Run the application
+
+4️⃣ Run the application
+
 
 flutter run
 
-📚 Learning Outcomes
 
-Through this project, the following Flutter concepts were practiced:
+---
 
-REST API integration
+## 📚 Learning Outcomes
 
-JSON parsing
+Through this project the following Flutter concepts were implemented:
 
-FutureBuilder for asynchronous programming
+- Local storage using **SharedPreferences**
+- Data persistence in mobile applications
+- CRUD operations in Flutter
+- UI design using **Material widgets**
+- Flutter project structure
 
-UI rendering using ListView
+---
 
-Flutter project structure
+## 📌 Conclusion
 
-👨‍💻 Author
+The **Travel Memory App** successfully demonstrates how to implement **local data storage in Flutter using SharedPreferences**. The application allows users to store and manage travel memories efficiently without internet access.
 
-Prince Dilipbhai Vaja
-20230905050013
-Class - B 
-CSE
-SEM 6 
+This project helps understand **data persistence, Flutter UI development, and local storage mechanisms**.
 
-Flutter REST API Assignment Project
+---
 
+## 👨‍💻 Author
+
+**Name:** Prince
+**Enrollment:** 20230905050013
+
+**Course:** Flutter ALA-3 Assignment  
+**Technology:** Flutter + Dart
