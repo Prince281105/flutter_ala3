@@ -163,8 +163,8 @@ This project helps understand **data persistence, Flutter UI development, and lo
 
 ## 👨‍💻 Author
 
-**Name:** Prince
+**Name:** Prince Dilipbhai Vaja
 **Enrollment:** 20230905050013
-
-**Course:** Flutter ALA-3 Assignment  
-**Technology:** Flutter + Dart
+Flutter - ALA 3 
+CSE 
+Class - B 
